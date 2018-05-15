@@ -1765,6 +1765,11 @@
       tds.on('click', function(){
         that.choose(lay(this));
       });
+      //双击日期
+      tds.on('dblclick', function(){
+        that.choose(lay(this));
+        that.remove().done();
+      });
     });
     
     //点击底部按钮
