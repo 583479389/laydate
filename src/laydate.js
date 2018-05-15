@@ -1768,7 +1768,7 @@
       //双击日期
       tds.on('dblclick', function(){
         that.choose(lay(this));
-        that.remove().done();
+        that.setValue(that.parse()).remove().done();
       });
     });
     
