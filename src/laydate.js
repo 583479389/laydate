@@ -1622,7 +1622,7 @@
       }
       
       //确定
-      ,confirm: function(){console.log('confirm');
+      ,confirm: function(){
         if(options.range){
           if(!that.endDate) return that.hint('请先选择日期范围');
           if(lay(btn).hasClass(DISABLED)) return that.hint(
