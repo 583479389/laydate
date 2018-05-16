@@ -1622,7 +1622,7 @@
       }
       
       //确定
-      ,confirm: function(){
+      ,confirm: function(){console.log('confirm');
         if(options.range){
           if(!that.endDate) return that.hint('请先选择日期范围');
           if(lay(btn).hasClass(DISABLED)) return that.hint(
@@ -1768,7 +1768,7 @@
       //双击日期
       tds.on('dblclick', function(){
         that.choose(lay(this));
-        that.setValue(that.parse()).remove().done();
+        that.tool(this, 'confirm');
       });
     });
     
